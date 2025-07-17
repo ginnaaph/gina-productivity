@@ -5,4 +5,5 @@ export type CalendarEvent ={
     end: Date
     isFocusBlock: boolean
     notes?: string
+    color: string
 }

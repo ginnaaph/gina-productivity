@@ -1,12 +1,9 @@
-import { DashboardHeading } from "./DashboardHeading";
-import { ProductivityDash } from "./main content/ProductivityDash";
-
+import { ProductivityDash } from "./ProductivityDash";
 
 export const Dashboard = () => {
   return (
-   <div>
-      <DashboardHeading />
-      <ProductivityDash/>
-      </div>
+    <div>
+      <ProductivityDash />
+    </div>
   );
 };

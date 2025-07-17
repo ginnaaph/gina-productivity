@@ -1,12 +1,17 @@
-import { Box, Text } from "@chakra-ui/react"
+import { Box} from "@chakra-ui/react"
 import { TimeBlockCalendar } from "@/components/calendar/TimeBlockCalendar"
 import { sampleEvents } from "@/components/calendar/timeblocking/sampleEvents"
-export const  CalendarView = () =>{
+import { useState } from "react"
+import type { CalendarEvent } from "@/components/calendar/timeblocking/types"
+
+export const  CalendarView = () => {
+   const [events, setEvents] = useState<CalendarEvent[]>(sampleEvents)
+
     return (
-        <Box h="100%" bg="#DDE8ED">
-         <Text >Daily Schedule Block will go here!!! </Text>
+        <Box  bg="#C0BFCf">
          <TimeBlockCalendar
-         events={sampleEvents}/>
+         events={events}
+         setEvents={setEvents}/>
         </Box>
     )
 }

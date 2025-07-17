@@ -1,0 +1,52 @@
+/* calendar.css */
+
+.rbc-calendar {
+  background-color: white;
+  color: #333;
+}
+
+.rbc-time-view,
+.rbc-day-view,
+.rbc-week-view {
+  background-color: white;
+}
+
+.rbc-time-header,         /* Top bar (Today, Back, Day/Week buttons) */
+.rbc-time-header-content,
+.rbc-header {
+  background-color: #C0BFCf;  /* Soft purple from your theme */
+  color: #2D1E2F;
+  font-weight: 500;
+}
+
+.rbc-timeslot-group {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.rbc-time-content {
+  border-top: 1px solid #d0cfe0;
+}
+
+.rbc-time-gutter {
+  background-color: #D7D1E9; /* left-side time column */
+  color: #4B3869;
+  font-weight: bold;
+}
+
+.rbc-time-slot {
+  background-color: white;
+}
+
+.rbc-toolbar button {
+  background: none;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+  font-weight: 500;
+}
+
+.rbc-toolbar button.rbc-active {
+  background-color: #BFA2DB;
+  color: white;
+}
